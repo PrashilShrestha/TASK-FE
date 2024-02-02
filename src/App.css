@@ -1,0 +1,25 @@
+
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.accordion-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+  padding: 2rem;
+  border-top: 5px solid #e2e8f0;
+}
+
+input[type="checkbox"]:checked + .accordion-label + .accordion-content {
+  display: block;
+}
